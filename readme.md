@@ -4,7 +4,7 @@
 
 修改自[xnth97/TJUThesisLatexTemplate](https://github.com/xnth97/TJUThesisLatexTemplate)
 
-## 改动
+## 更新日志
 + 调整了封面校徽的大小使其与Word模版接近
 + 引入了任务书和开题报告
 + 减小目录章节中的空格为两个汉字的宽度
@@ -16,13 +16,15 @@
 + 参考文献部分全部使用半角符号
 + 将整体代码模块化
 
-[效果预览](https://github.com/liangzhenduo0608/TJU-thesis-template/blob/master/main.pdf)
+## 预览
+[天津大学本科生毕业论文](https://github.com/liangzhenduo0608/TJU-thesis-template/blob/master/main.pdf)
 
 ## 环境
 ### macOS
 [MacTeX](https://www.tug.org/mactex/) + [Texpad](https://www.texpad.com/)
 
 ### Windows
+[TexLive](https://www.tug.org/texlive/)
 
 ## 基本用法
 ### 章节
@@ -61,11 +63,11 @@
 ### 图片
 ```tex
 \begin{figure}[htbp!]
-		\centering
-		\includegraphics[width=0.5\textwidth]{figures/picture.png}
-		\caption{图片说明}\label{图片标签}
-		\vspace{-1em}
-	\end{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/picture.png}
+	\caption{图片说明}\label{图片标签}
+	\vspace{-1em}
+\end{figure}
 ```
 
 ### 表格
@@ -105,8 +107,8 @@ $$p_1(v_i, v_j)=\frac{1}{1+\exp(-\overrightarrow{u_i}^T\cdot\overrightarrow{u_j}
 ### 伪代码
 ```tex
 \begin{algorithm}[]
-    \SetKwInOut{Input}{输入}
-    \SetKwInOut{Output}{输出}
+	\SetKwInOut{Input}{输入}
+	\SetKwInOut{Output}{输出}
 	\caption{\sc DeepWalk\((G, w, d, \gamma, t)\)}\label{DeepWalk}
     \Input{图\(G(V,E)\) \\
     	窗大小\(w\) \\
@@ -114,7 +116,6 @@ $$p_1(v_i, v_j)=\frac{1}{1+\exp(-\overrightarrow{u_i}^T\cdot\overrightarrow{u_j}
     	每个节点游走数\(\gamma\) \\
     	游走距离\(t\)
     }
-    
     \Output{节点表征矩阵\(\Phi\in\mathbb{R}^{|V|\times d}\)
     }
     初始化：从\(\mathcal{U}^{|V|\times d}\)采样\(\Phi\) \\
@@ -124,7 +125,7 @@ $$p_1(v_i, v_j)=\frac{1}{1+\exp(-\overrightarrow{u_i}^T\cdot\overrightarrow{u_j}
     	\ForEach{\(v_i\in\mathcal{O}\)}{
     		\(\mathcal{W}_{v_i}=RandomWalk(G, v_i, t)\) \\
     		\(\textsc{SkipGram}(\Phi, \mathcal{W}_{v_i}, w)\)
-    	}
+		}
 	}
 \end{algorithm}
 ```
