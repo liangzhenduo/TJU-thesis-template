@@ -1,7 +1,6 @@
 # 天津大学本科生毕业论文模版
 ## 来源
 原始版本[tjuthesis](https://code.google.com/archive/p/tjuthesis/)
-
 修改自[xnth97/TJUThesisLatexTemplate](https://github.com/xnth97/TJUThesisLatexTemplate)
 
 ## 更新日志
@@ -110,21 +109,21 @@ $$p_1(v_i, v_j)=\frac{1}{1+\exp(-\overrightarrow{u_i}^T\cdot\overrightarrow{u_j}
 	\SetKwInOut{Input}{输入}
 	\SetKwInOut{Output}{输出}
 	\caption{\sc DeepWalk\((G, w, d, \gamma, t)\)}\label{DeepWalk}
-    \Input{图\(G(V,E)\) \\
-    	窗大小\(w\) \\
-    	嵌入维度\(d\) \\
-    	每个节点游走数\(\gamma\) \\
-    	游走距离\(t\)
-    }
-    \Output{节点表征矩阵\(\Phi\in\mathbb{R}^{|V|\times d}\)
-    }
-    初始化：从\(\mathcal{U}^{|V|\times d}\)采样\(\Phi\) \\
-    从\(V\)建立二叉树\(T\) \\
+	\Input{图\(G(V,E)\) \\
+		窗大小\(w\) \\
+		嵌入维度\(d\) \\
+		每个节点游走数\(\gamma\) \\
+		游走距离\(t\)
+	}
+	\Output{节点表征矩阵\(\Phi\in\mathbb{R}^{|V|\times d}\)
+	}
+	初始化：从\(\mathcal{U}^{|V|\times d}\)采样\(\Phi\) \\
+	从\(V\)建立二叉树\(T\) \\
 	\For{\(i=0\) to \(\gamma\)}{
-    	\(\mathcal{O}\) = Shuffle(\(V\)) \\
-    	\ForEach{\(v_i\in\mathcal{O}\)}{
-    		\(\mathcal{W}_{v_i}=RandomWalk(G, v_i, t)\) \\
-    		\(\textsc{SkipGram}(\Phi, \mathcal{W}_{v_i}, w)\)
+		\(\mathcal{O}\) = Shuffle(\(V\)) \\
+		\ForEach{\(v_i\in\mathcal{O}\)}{
+			\(\mathcal{W}_{v_i}=RandomWalk(G, v_i, t)\) \\
+			\(\textsc{SkipGram}(\Phi, \mathcal{W}_{v_i}, w)\)
 		}
 	}
 \end{algorithm}
