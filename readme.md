@@ -20,10 +20,17 @@
 
 ## 环境
 ### macOS
-[MacTeX](https://www.tug.org/mactex/) + [Texpad](https://www.texpad.com/)
+[MacTeX](https://www.tug.org/mactex/) + [Atom](https://atom.io/) + [latex](https://atom.io/packages/latex)
 
 ### Windows
-[TexLive](https://www.tug.org/texlive/)
+[MiKTeX](https://miktex.org/) + [VS Code](https://code.visualstudio.com/) + [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
+
+### 引擎
+`xelatex`
+
+### 字体
+[思源宋体](https://raw.githubusercontent.com/adobe-fonts/source-han-serif/release/SubsetOTF/SourceHanSerifCN.zip)
+[思源黑体](https://raw.githubusercontent.com/adobe-fonts/source-han-sans/release/SubsetOTF/SourceHanSansCN.zip)
 
 ## 基本用法
 ### 章节
