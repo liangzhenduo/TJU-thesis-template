@@ -25,11 +25,12 @@
 ### Windows
 [MiKTeX](https://miktex.org/) + [VS Code](https://code.visualstudio.com/) + [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
 
-### 引擎
-`xelatex`
+### 编译
+`xelatex` + `bibtex`
 
 ### 字体
 [思源宋体](https://raw.githubusercontent.com/adobe-fonts/source-han-serif/release/SubsetOTF/SourceHanSerifCN.zip)
+
 [思源黑体](https://raw.githubusercontent.com/adobe-fonts/source-han-sans/release/SubsetOTF/SourceHanSansCN.zip)
 
 ## 基本用法
@@ -38,7 +39,7 @@
 \chapter{章}
 \section{节}
 \subsection{小节}
-\subsubsection{小小节}
+\subsubsection{子小节}
 ```
 
 ### 引用

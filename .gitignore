@@ -43,5 +43,16 @@ Temporary Items
 .apdisk
 
 # Master
-/~*
-/.texpadtmp/*
+~*
+.texpadtmp/*
+*.aux
+*.log
+*.out
+main.bbl
+main.blg
+main.xdv
+main.fdb_latexmk
+main.fls
+main.synctex.gz
+main.thm
+main.toc
